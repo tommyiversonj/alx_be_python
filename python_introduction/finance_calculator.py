@@ -1,11 +1,17 @@
-# Use user input, variables, and arithmetic operations to calculate and provide feedback on a user’s monthly savings and potential future savings without applying conditional statements.
+# Use user input, variables, and arithmetic operations to calculate and provide feedback
+# on a user’s monthly savings and potential future savings without applying conditional statements.
 
-monthly_income = int(input("Enter your monthly income: "))
-monthly_expense = int (input("Enter your total monthly expenses: "))
+# Prompt the user for financial inputs
+monthly_income = float(input("Enter your monthly income: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 
-monthly_savings = monthly_income - monthly_expense
+# Calculate monthly savings
+monthly_savings = monthly_income - monthly_expenses
 
-project_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
+# Calculate projected annual savings with 5% interest
+projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
-print(f"Your monthly savings are ${monthly_savings:.2f}")
-print(f"Projected savings after one year, with interest, is: ${project_savings:.2f}")
+# Display the results
+print(f"Your monthly savings are ${monthly_savings:.2f}.")
+print(f"Projected savings after one year, with interest, is: ${projected_savings:.2f}.")
+
