@@ -1,9 +1,9 @@
-#match_case_calculator.py
+# match_case_calculator.py
 
-# Prompt user inputs
+# Prompt user for inputs
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-operation = input("Choose the operation: (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /):")
 
 # Perform calculation using match case
 match operation:
@@ -12,7 +12,7 @@ match operation:
         print(f"The result is {result}")
     case "-":
         result = num1 - num2
-        print(f"The result is {result}")  
+        print(f"The result is {result}")
     case "*":
         result = num1 * num2
         print(f"The result is {result}")
@@ -21,6 +21,6 @@ match operation:
             result = num1 / num2
             print(f"The result is {result}")
         else:
-            print("Error: Division by zero is not allow.")
+            print("Error: Division by zero is not allowed.")
     case _:
-        print("Invalid operation selected")
+        print("Invalid operation selected.")
