@@ -1,5 +1,5 @@
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")  # <- matches the expected string exactly
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -29,7 +29,7 @@ def main():
 
         elif choice == '3':
             if shopping_list:
-                print("\nYour Shopping List:")
+                print("Your Shopping List:")
                 for i, item in enumerate(shopping_list, 1):
                     print(f"{i}. {item}")
             else:
@@ -38,7 +38,6 @@ def main():
         elif choice == '4':
             print("Goodbye!")
             break
-
         else:
             print("Invalid choice. Please try again.")
 
